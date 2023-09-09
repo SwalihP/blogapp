@@ -1,0 +1,12 @@
+{% extends 'appbase.html' %}
+{% load static %}
+{% block content %}
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <table>
+        {{form.as_table}}
+    </table>
+    <input type="submit" class="btn btn-success">
+</form>
+
+{% endblock %}

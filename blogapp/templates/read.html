@@ -1,0 +1,22 @@
+{% extends 'appbase.html' %}
+{% load static %}
+{% block content %}
+<div class="container">
+<div style="height:700px;width:80%">
+
+    <div class="card m-5" style="width:100%;">
+      <center>
+  <img src="{{b.img.url}}" class="card-img-top" style="height:300px;width:500px;margin-top:5px">
+        </center>
+  <div class="card-body">
+    <p class="card-text">by {{b.author}}</p>
+    <p>{{b.created}}</p>
+    <h6>{{b.title}}</h6>
+    <h6>{{b.content }}</h6>
+  </div>
+</div>
+
+</div>
+  </div>
+
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends 'appbase.html' %}
+{% load static %}
+{% block content %}
+<div class="container">
+  <div class="row">
+    {% for i in b %}
+    <div class="col-md-5 m-3">
+    <div class="card m-3" style="width:30rem;">
+  <img src="{{i.img.url}}" class="card-img-top" style="height:280px;width:100%">
+  <div class="card-body">
+    <p class="card-text">by {{i.author}}</p>
+    <p>{{i.created}}</p>
+    <h6>{{i.title}}</h6>
+    <a class="btn btn-outline-primary" href="{% url 'application:read' i.id %}">Read</a>
+      <a class="btn btn-outline-success" href="{% url 'application:edit' i.id %}">Edit</a>
+      <a class="btn btn-outline-danger" href="{% url 'application:delete' i.id %}">Delete</a>
+  </div>
+</div>
+
+</div>
+    {% endfor %}
+  </div>
+</div>
+
+
+{% endblock %}

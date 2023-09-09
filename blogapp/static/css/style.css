@@ -1,0 +1,12 @@
+body{background:Azure}
+
+h1{font-family: 'Qwitcher Grypen', cursive;font-size:90px;position:absolute;top:160px;left:480px;}
+.p1{position:fixed;right:570px;top:270px;}
+.style1{background-color:lavender;height:500px;width:100%;position:relative;}
+.btn1{position:fixed;right:80px;top:10px;}
+.btn2{position:fixed;right:10px;top:10px;}
+.btn3{position:absolute;left:640px;bottom:10px;}
+.p2{position:fixed;bottom:0px;left:550px;font-weight:bold;}
+
+
+

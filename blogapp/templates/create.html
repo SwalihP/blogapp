@@ -1,0 +1,26 @@
+{% extends 'appbase.html' %}
+{% load static %}
+{% block content %}
+
+<form method="POST" style="width:75%" enctype="multipart/form-data">
+  {% csrf_token %}
+  <div class="mb-3">
+    <label  class="form-label">Author</label>
+    <input type="text" class="form-control bg-light" name="a" placeholder="Enter Author">
+  </div>
+  <div class="mb-3">
+    <label  class="form-label">Title</label>
+    <input type="text" class="form-control bg-light" name="t" placeholder="Enter Title">
+  </div>
+   <div class="mb-3">
+    <label  class="form-label">Image</label>
+    <input type="file"  class="form-control bg-light" name="i" placeholder="Add image">
+  </div>
+  <div class="mb-3">
+    <label  class="form-label">Content</label>
+    <input type="text"  class="form-control bg-light" name="c" placeholder="Type here">
+  </div>
+
+  <input type="submit" class="btn btn-danger">
+</form>
+{% endblock %}
